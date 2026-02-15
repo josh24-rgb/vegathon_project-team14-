@@ -11,7 +11,8 @@
 #define LED_RED 4      // Red LED
 #define LED_YELLOW 5   // Yellow LED
 #define LED_GREEN 6    // Green LED
-
+TwoWire Wire(1);
+SPIClass SPI(0);
 // OLED Setup (SH1106 - 128x64)
 #define OLED_RESET -1
 Adafruit_SH1106 display(OLED_RESET);
